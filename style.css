@@ -8,9 +8,10 @@
     --dark-chestnut: rgb(181, 42, 56); /*neon shadow of O*/
     --juicy-chestnut: rgb(178, 80, 72); /*shadow of O*/
     --purple-white: rgb(248, 211, 203); /*color of O*/
+    --xo-style: 'Frijole', cursive;
+    --main-style: 'Inknut Antiqua', serif;
 }
-font-family: 'Frijole', cursive;
-font-family: 'Inknut Antiqua', serif;
+
 *{
     margin: 0;
     padding: 0;
