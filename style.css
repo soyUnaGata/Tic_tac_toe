@@ -17,3 +17,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.main {
+    margin: 0 auto;
+    display: flex;
+}
+.title {
+   font-family: var(--main-style);
+   font-size: 500;
+   margin: 13rem auto 0 auto;
+}
+.players {
+}
+.player_x {
+}
+.player_o {
+}
+.box__area {
+}
