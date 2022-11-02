@@ -1,10 +1,10 @@
 :root {
     --violet: rgb(199, 113, 225); /*frame */
-    --deep-purple: rgb(38, 13, 80); /*background*/
+    --deep-purple: rgb(38, 13, 80, 0.9 ); /*background*/
     --dark-blue: rgb(49, 37, 142); /*neon shadow of X*/
     --roayl-blue: rgb(66, 110, 211); /*shadow of X*/
     --cadet-blue: rgb(175, 179, 214); /*color of X*/
-    --purple-eggplant: rgb(105, 27, 155); /*border in the frame*/
+    --purple-eggplant: rgba(105, 27, 155); /*border in the frame*/
     --dark-chestnut: rgb(181, 42, 56); /*neon shadow of O*/
     --juicy-chestnut: rgb(178, 80, 72); /*shadow of O*/
     --purple-white: rgb(248, 211, 203); /*color of O*/
@@ -21,17 +21,72 @@
 .main {
     margin: 0 auto;
     display: flex;
+    width: 100%;
+    height: 100%;
 }
+
 .title {
    font-family: var(--main-style);
    font-size: 500;
-   margin: 13rem auto 0 auto;
+    margin: 5rem auto auto;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
-.players {
+.players{
+   font-family: var(--main-style);
+   font-weight: 500;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+.players_t {
+    font-size: 45px;
+    font-weight: bolder;
+    background: linear-gradient(82deg, rgba(49,37,142,1) 7%, rgba(128,149,213,1) 22%, rgba(175,179,214,1) 39%, rgba(181,42,56,1) 60%, rgba(178,80,72,1) 81%, rgba(248,211,203,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.xo {
+    display: flex;
+    gap: 10rem;
+    font-family: var(--xo-style);
+    font-size: 70px;
+    justify-content: center;
 }
 .player_x {
+    color: var(--cadet-blue);
+    text-shadow: 0 0 5px var(--roayl-blue), 0 0 15px var(--roayl-blue), 0 0 20px var(--roayl-blue), 0 0 35px var(--dark-blue), 0 0 40px var(--dark-blue), 0 0 50px var(--dark-blue);
 }
 .player_o {
+    color: var(--purple-white);
+    text-shadow: 0 0 5px var(--juicy-chestnut), 0 0 15px var(--juicy-chestnut), 0 0 20px var(--juicy-chestnut), 0 0 35px var(--dark-chestnut), 0 0 40px var(--dark-chestnut), 0 0 50px var(--dark-chestnut);
 }
 .box__area {
+    display: flex;
+    height: 100%;
+    margin-top: 5rem;
+}
+.table {
+    width: 495px;
+    height: 503px;
+    display: flex;
+    margin: auto;
+    border: 8px solid var(--violet);
+    border-radius: 15px;
+    border-collapse: collapse;
+    background: var(--deep-purple);
+}
+.column:nth-last-child(n+1) {
+    border-right: 3px solid var(--purple-eggplant);
+    width: 100%;
+    display: table-row;
+}
+.row {
+    height: 165px;
+}
+.row:nth-last-child(n+2) {
+    border-bottom: 3px solid var(--purple-eggplant);
 }
