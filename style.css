@@ -1,10 +1,10 @@
 :root {
     --violet: rgb(199, 113, 225); /*frame */
-    --deep-purple: rgb(38, 13, 80, 0.9 ); /*background*/
+    --deep-purple: rgba(38, 13, 80, 0.9 ); /*background*/
     --dark-blue: rgb(49, 37, 142); /*neon shadow of X*/
     --roayl-blue: rgb(66, 110, 211); /*shadow of X*/
     --cadet-blue: rgb(175, 179, 214); /*color of X*/
-    --purple-eggplant: rgba(105, 27, 155); /*border in the frame*/
+    --purple-eggplant: rgb(105, 27, 155); /*border in the frame*/
     --dark-chestnut: rgb(181, 42, 56); /*neon shadow of O*/
     --juicy-chestnut: rgb(178, 80, 72); /*shadow of O*/
     --purple-white: rgb(248, 211, 203); /*color of O*/
@@ -78,6 +78,7 @@
     border-radius: 15px;
     border-collapse: collapse;
     background: var(--deep-purple);
+    text-align: center;
 }
 .column:nth-last-child(n+1) {
     border-right: 3px solid var(--purple-eggplant);
