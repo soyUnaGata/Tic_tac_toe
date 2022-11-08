@@ -13,76 +13,70 @@ for(let i = 0; i < rows.length; i++){
 }
 
 function checkWinner(e){
-//    for(let a = 0; a < arrayOfRows.length; a++){
-        if(arrayOfRows[0].innerHTML === playerO.innerHTML && arrayOfRows[1].innerHTML === playerO.innerHTML && arrayOfRows[2].innerHTML === playerO.innerHTML){
-            hasWinner = true;
-           renderWinnerO();
-           arrayOfRows[0].style.textDecoration = 'line-through'
-           arrayOfRows[1].style.textDecoration = 'line-through'
-        }
-         if(arrayOfRows[0].innerHTML === playerX.innerHTML  && arrayOfRows[1].innerHTML === playerX.innerHTML && arrayOfRows[2].innerHTML === playerX.innerHTML){
-            hasWinner = true;
-           renderWinnerX();
-        }
-        if(arrayOfRows[3].innerHTML === playerO.innerHTML  && arrayOfRows[4].innerHTML === playerO.innerHTML && arrayOfRows[5].innerHTML === playerO.innerHTML){
-            hasWinner = true;
-            renderWinnerO();
-        }
-        if(arrayOfRows[3].innerHTML === playerX.innerHTML  && arrayOfRows[4].innerHTML === playerX.innerHTML && arrayOfRows[5].innerHTML === playerX.innerHTML){
-            hasWinner = true;
-            renderWinnerX();
-        }
-        if(arrayOfRows[6].innerHTML === playerO.innerHTML  && arrayOfRows[7].innerHTML === playerO.innerHTML && arrayOfRows[8].innerHTML === playerO.innerHTML){
-            hasWinner = true;
-            renderWinnerO();
-        }
-        if(arrayOfRows[6].innerHTML === playerX.innerHTML  && arrayOfRows[7].innerHTML === playerX.innerHTML && arrayOfRows[8].innerHTML === playerX.innerHTML){
-            hasWinner = true;
-            renderWinnerX();
-        }
-        if(arrayOfRows[0].innerHTML === playerO.innerHTML && arrayOfRows[3].innerHTML === playerO.innerHTML && arrayOfRows[6].innerHTML === playerO.innerHTML){
-            hasWinner = true;
-            renderWinnerO();
-        }
-        if(arrayOfRows[0].innerHTML === playerX.innerHTML && arrayOfRows[3].innerHTML === playerX.innerHTML && arrayOfRows[6].innerHTML === playerX.innerHTML){
-            hasWinner = true;
-            renderWinnerX();
-        }
-        if(arrayOfRows[1].innerHTML === playerO.innerHTML && arrayOfRows[4].innerHTML === playerO.innerHTML && arrayOfRows[7].innerHTML === playerO.innerHTML){
-            hasWinner = true;
-            renderWinnerO();
-        }
-        if(arrayOfRows[1].innerHTML === playerX.innerHTML && arrayOfRows[4].innerHTML === playerX.innerHTML && arrayOfRows[7].innerHTML === playerX.innerHTML){
-            hasWinner = true;
-            renderWinnerX();
-        }
-        if(arrayOfRows[2].innerHTML === playerO.innerHTML && arrayOfRows[5].innerHTML === playerO.innerHTML && arrayOfRows[8].innerHTML === playerO.innerHTML){
-            hasWinner = true;
-            renderWinnerO();
-        }
-        if(arrayOfRows[2].innerHTML === playerX.innerHTML && arrayOfRows[5].innerHTML === playerX.innerHTML && arrayOfRows[8].innerHTML === playerX.innerHTML){
-            hasWinner = true;
-            renderWinnerX();
-        }
-        if(arrayOfRows[0].innerHTML === playerX.innerHTML && arrayOfRows[4].innerHTML === playerX.innerHTML && arrayOfRows[8].innerHTML === playerX.innerHTML){
-            hasWinner = true;
-            renderWinnerX();
-        }
-        if(arrayOfRows[0].innerHTML === playerO.innerHTML && arrayOfRows[4].innerHTML === playerO.innerHTML && arrayOfRows[8].innerHTML === playerO.innerHTML){
-            hasWinner = true;
-            renderWinnerO();
-        }
-        if(arrayOfRows[2].innerHTML === playerX.innerHTML && arrayOfRows[4].innerHTML === playerX.innerHTML && arrayOfRows[6].innerHTML === playerX.innerHTML){
-            hasWinner = true;
-            renderWinnerX();
-        }
-        if(arrayOfRows[2].innerHTML === playerO.innerHTML && arrayOfRows[4].innerHTML === playerO.innerHTML && arrayOfRows[6].innerHTML === playerO.innerHTML){
-            hasWinner = true;
-            renderWinnerO();
-        }
-
-//    }
-    
+    if(arrayOfRows[0].innerHTML === playerO.innerHTML && arrayOfRows[1].innerHTML === playerO.innerHTML && arrayOfRows[2].innerHTML === playerO.innerHTML){
+        hasWinner = true;
+        renderWinnerO();
+    }
+        if(arrayOfRows[0].innerHTML === playerX.innerHTML  && arrayOfRows[1].innerHTML === playerX.innerHTML && arrayOfRows[2].innerHTML === playerX.innerHTML){
+        hasWinner = true;
+        renderWinnerX();
+    }
+    if(arrayOfRows[3].innerHTML === playerO.innerHTML  && arrayOfRows[4].innerHTML === playerO.innerHTML && arrayOfRows[5].innerHTML === playerO.innerHTML){
+        hasWinner = true;
+        renderWinnerO();
+    }
+    if(arrayOfRows[3].innerHTML === playerX.innerHTML  && arrayOfRows[4].innerHTML === playerX.innerHTML && arrayOfRows[5].innerHTML === playerX.innerHTML){
+        hasWinner = true;
+        renderWinnerX();
+    }
+    if(arrayOfRows[6].innerHTML === playerO.innerHTML  && arrayOfRows[7].innerHTML === playerO.innerHTML && arrayOfRows[8].innerHTML === playerO.innerHTML){
+        hasWinner = true;
+        renderWinnerO();
+    }
+    if(arrayOfRows[6].innerHTML === playerX.innerHTML  && arrayOfRows[7].innerHTML === playerX.innerHTML && arrayOfRows[8].innerHTML === playerX.innerHTML){
+        hasWinner = true;
+        renderWinnerX();
+    }
+    if(arrayOfRows[0].innerHTML === playerO.innerHTML && arrayOfRows[3].innerHTML === playerO.innerHTML && arrayOfRows[6].innerHTML === playerO.innerHTML){
+        hasWinner = true;
+        renderWinnerO();
+    }
+    if(arrayOfRows[0].innerHTML === playerX.innerHTML && arrayOfRows[3].innerHTML === playerX.innerHTML && arrayOfRows[6].innerHTML === playerX.innerHTML){
+        hasWinner = true;
+        renderWinnerX();
+    }
+    if(arrayOfRows[1].innerHTML === playerO.innerHTML && arrayOfRows[4].innerHTML === playerO.innerHTML && arrayOfRows[7].innerHTML === playerO.innerHTML){
+        hasWinner = true;
+        renderWinnerO();
+    }
+    if(arrayOfRows[1].innerHTML === playerX.innerHTML && arrayOfRows[4].innerHTML === playerX.innerHTML && arrayOfRows[7].innerHTML === playerX.innerHTML){
+        hasWinner = true;
+        renderWinnerX();
+    }
+    if(arrayOfRows[2].innerHTML === playerO.innerHTML && arrayOfRows[5].innerHTML === playerO.innerHTML && arrayOfRows[8].innerHTML === playerO.innerHTML){
+        hasWinner = true;
+        renderWinnerO();
+    }
+    if(arrayOfRows[2].innerHTML === playerX.innerHTML && arrayOfRows[5].innerHTML === playerX.innerHTML && arrayOfRows[8].innerHTML === playerX.innerHTML){
+        hasWinner = true;
+        renderWinnerX();
+    }
+    if(arrayOfRows[0].innerHTML === playerX.innerHTML && arrayOfRows[4].innerHTML === playerX.innerHTML && arrayOfRows[8].innerHTML === playerX.innerHTML){
+        hasWinner = true;
+        renderWinnerX();
+    }
+    if(arrayOfRows[0].innerHTML === playerO.innerHTML && arrayOfRows[4].innerHTML === playerO.innerHTML && arrayOfRows[8].innerHTML === playerO.innerHTML){
+        hasWinner = true;
+        renderWinnerO();
+    }
+    if(arrayOfRows[2].innerHTML === playerX.innerHTML && arrayOfRows[4].innerHTML === playerX.innerHTML && arrayOfRows[6].innerHTML === playerX.innerHTML){
+        hasWinner = true;
+        renderWinnerX();
+    }
+    if(arrayOfRows[2].innerHTML === playerO.innerHTML && arrayOfRows[4].innerHTML === playerO.innerHTML && arrayOfRows[6].innerHTML === playerO.innerHTML){
+        hasWinner = true;
+        renderWinnerO();
+    }
 }  
 
 function render (e){
