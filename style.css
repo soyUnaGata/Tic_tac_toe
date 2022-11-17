@@ -91,3 +91,16 @@
 .row:nth-last-child(n+2) {
     border-bottom: 3px solid var(--purple-eggplant);
 }
+
+
+.x-symbol{
+    color: var(--cadet-blue);
+    text-shadow: 0 0 5px var(--roayl-blue), 0 0 15px var(--roayl-blue), 0 0 20px var(--roayl-blue), 0 0 35px var(--dark-blue), 0 0 40px var(--dark-blue), 0 0 50px var(--dark-blue);
+    font-size: 70px;
+}
+
+.o-symbol{
+    color: var(--purple-white);
+    text-shadow: 0 0 5px var(--juicy-chestnut), 0 0 15px var(--juicy-chestnut), 0 0 20px var(--juicy-chestnut), 0 0 35px var(--dark-chestnut), 0 0 40px var(--dark-chestnut), 0 0 50px var(--dark-chestnut);
+    font-size: 70px;
+}
