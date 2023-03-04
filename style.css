@@ -79,6 +79,7 @@
     border-collapse: collapse;
     background: var(--deep-purple);
     text-align: center;
+    cursor: pointer;
 }
 .column:nth-last-child(n+1) {
     border-right: 3px solid var(--purple-eggplant);
